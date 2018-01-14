@@ -1,0 +1,67 @@
+/* add your CSS here */
+
+/* =============
+  Elements
+================ */
+
+html,
+body {
+ height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+/* =============
+  Classes
+================ */
+
+.card {
+  width: 300px;
+  padding: 0px 10px 10px;
+  border: solid 1px #bebbbb;
+  box-shadow: 4px 5px 8px 1px #8d8c8c;
+  background-color: #c9c5c5;
+
+}
+
+.image {
+  border-radius: 4px;
+}
+
+.container {
+  font-size: .85em;
+  padding: 0px 10px 5px;
+  margin-top: 10px;
+  border: solid 1px #bebbbb;
+  border-radius: 8px; 
+  background-color: #eeeeee;
+  width: 275px;
+  transition: width 2s;
+}
+
+.container:hover {
+  display: inline-block;
+  width: 400px; 
+}
+
+
+.info-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: #9c9c9c
+}
+
+  .link:hover {
+    filter: brightness(125%);
+  }
+
+  .link:active {
+    filter: brightness(140%);
+  }

@@ -74,7 +74,7 @@ footer {
 
 #card-title {
   display: inline-block;
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: #8f8d9e;
   transition: color 3s;
 }
@@ -86,16 +86,16 @@ footer {
 #snow-icon {
   margin: 1.1em .5rem 0 0;
   float: right;
-  transition: all .2s;
+  transition: all .5s;
 }
 
   #snow-icon:hover {
-    transform: scale(1.4)
+    transform: scale(1.5)
   }
   
 #card-image {
   border-radius: 4px;
-  transition: all .3s;
+  transition: all .7s;
   position: relative;
 }
   
@@ -113,7 +113,7 @@ footer {
   border: solid 1px #bebbbb;
   border-radius: 8px; 
   background-color: #eeeeee;
-  transition: all .3s; 
+  transition: all .5s; 
   position: relative;
   z-index: 998;
 }
@@ -131,12 +131,12 @@ footer {
 #card-bottom {
   padding-top: .8em;
   height: 30px;
-  transition: all .2s;  
+  transition: all .5s;  
 }
 
   #card-bottom:hover {
     position: relative;
-    transform: scale(1.2);
+    transform: scale(1.5);
     border: 1px solid #8d8c8c;
     border-radius: 5px;
     background-color: #c9c5c5;

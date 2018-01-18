@@ -2,6 +2,13 @@
   Elements
 ================ */
 
+:root:before {
+  content: url(https://www.dropbox.com/s/0vyqiwnt1v3zbxx/ghost-angry.jpg?raw=1);
+  visibility: hidden;
+  position: absolute;
+  left: -999em;
+}
+
 html,
 body {
  height: 100%;
@@ -39,11 +46,6 @@ footer {
   right: 34;
 }
 
-/* .img-box {
-  width: 300px;
-} */
-
-
 .link {
   text-decoration: none;
   color: #858383
@@ -61,12 +63,12 @@ footer {
   IDs
 ================ */
 
-
 #card {
   width: 300px;
-  padding: 0px 10px 10px;
-  border: solid 1px #bebbbb;
-  box-shadow: 4px 5px 8px 1px #8d8c8c;
+  padding: 0px 10px 7px;
+  border: ridge 5px #2f2f30;
+  border-radius: 5px;
+  box-shadow: 4px 5px 8px 2px #8d8c8c;
   background-color: #c9c5c5;
   opacity: 1;
   animation: fadein 2s;
@@ -81,19 +83,22 @@ footer {
   background-color: #858383;
   padding: .5em;
   margin: .5em 0;
+  border-radius: 100px;
+  border: solid 5px #2f2f30;
 }
 
 #card-title {
   display: inline-block;
   font-size: 1.6em;
-  color: #8f8d9e;
-  transition: color 3s;
+  color: #d0dfe6;
+  transition: all 2s ease-in-out;
   margin: 0 0 0 .5em;
+  text-shadow: 0 0 2px #0a0a0a;
 }
 
   #card-title:hover {
-    color: #f1f1f1;
-    
+    color: #646262;
+    text-shadow: 0 0 10px #ffffff;
   }
 
 #snow-icon {
@@ -105,28 +110,30 @@ footer {
   #snow-icon:hover {
     transform: scale(1.5)
   }
-  
+
 #card-image {
+  width: 300px; 
+  height: 200px;
+  box-sizing: border-box;
+  border: solid 4px #2f2f30;
   border-radius: 4px;
   transition: all .7s ease-in-out;
+  overflow: hidden;
   position: relative;
 }
   
-
-#card-image:hover {
-  content: url("ghost-angry.jpg");
-  border-radius: 50%;
-  transform: scale(1.2) rotate(360deg);
-  z-index: 999;
-  width: 300px;
-  height: 200px;
-}   
+  #card-image:hover {
+    content: url("ghost-angry.jpg");
+    transform: scale(1.2) rotate(360deg);
+    z-index: 999;
+    border-radius: 50%;
+  }
   
 #card-info {
   font-size: .85em;
   padding: 0px 10px;
   margin-top: 10px;
-  border: solid 1px #bebbbb;
+  border: solid 4px #2f2f30;
   border-radius: 8px; 
   background-color: #eeeeee;
   transition: all .4s ease-in-out; 
@@ -139,10 +146,14 @@ footer {
     z-index: 999;
   }
 
+#info-fact {
+  text-align: center;
+}
+
 #info-list {
   list-style-type: none;
   padding: 0;
-  }
+}
 
 #card-bottom {
   padding-top: .8em;
@@ -153,7 +164,7 @@ footer {
   #card-bottom:hover {
     position: relative;
     transform: scale(1.5);
-    border: 1px solid #8d8c8c;
+    border: 4px solid #2f2f30;
     border-radius: 5px;
     background-color: #c9c5c5;
     z-index: 999;

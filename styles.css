@@ -124,12 +124,14 @@ footer {
   transition: all .7s ease-in-out;
   overflow: hidden;
   position: relative;
+  display: inline-block;
 }
   
   #card-image:hover {
     content: url("ghost-angry.jpg");
     transform: scale(1.2) rotate(360deg);
     z-index: 999;
+    border-radius: 50%;
   }
   
 #card-info {
@@ -142,6 +144,7 @@ footer {
   transition: all .4s ease-in-out; 
   position: relative;
   z-index: 998;
+  opacity: .9;
 }
 
   #card-info:hover {

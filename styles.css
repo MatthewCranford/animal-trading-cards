@@ -2,10 +2,16 @@
   Elements
 ================ */
 
+:root:before {
+  content: url(https://www.dropbox.com/s/0vyqiwnt1v3zbxx/ghost-angry.jpg?raw=1);
+  visibility: hidden;
+  position: absolute;
+  left: -999em;
+}
+
 html,
 body {
- height: 100%;
- font-family: Arial, Helvetica, sans-serif
+ font-family: 'Supermercado One', cursive, Arial, Helvetica, sans-serif
 }
 
 html {
@@ -15,15 +21,24 @@ html {
 
 footer {
   text-align: center;
+<<<<<<< HEAD
   margin-top: 2em;
   font-size: .9em;
+=======
+  margin: 1.5em 0 0;
+  font-size: .9em;
+  font-family: Arial, Helvetica, sans-serif
+>>>>>>> 2501668dcadab0be357cbbd901804fca532eff10
 }
 
 /* =============
   Classes
 ================ */
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2501668dcadab0be357cbbd901804fca532eff10
 .icon {
   width: 25px;
   height: 25px;
@@ -36,12 +51,20 @@ footer {
   position: relative;
   color: white;
   bottom: 7px;
+<<<<<<< HEAD
   right: 34;
+=======
+  right: 32px;
+>>>>>>> 2501668dcadab0be357cbbd901804fca532eff10
 }
 
 .link {
   text-decoration: none;
+<<<<<<< HEAD
   color: #9c9c9c
+=======
+  color: #858383
+>>>>>>> 2501668dcadab0be357cbbd901804fca532eff10
 }
 
   .link:hover {
@@ -56,6 +79,7 @@ footer {
   IDs
 ================ */
 
+<<<<<<< HEAD
 
 #card {
   width: 300px;
@@ -65,6 +89,19 @@ footer {
   background-color: #c9c5c5;
   opacity: 1;
   animation: fadein 2s;
+=======
+#card-container {
+  margin-top: 1rem;
+  width: 300px;
+  padding: 0px 10px 7px;
+  border: ridge 5px #2f2f30;
+  border-radius: 5px;
+  box-shadow: 4px 5px 8px 2px #8d8c8c;
+  background-color: #c9c5c5;
+  opacity: 1;
+  animation: fadein 2s;
+  background: radial-gradient(#313133, #85858b, #d2d2dd);
+>>>>>>> 2501668dcadab0be357cbbd901804fca532eff10
 }
 
   @keyframes fadein {
@@ -72,6 +109,7 @@ footer {
     to {opacity: 1;}
   }
 
+<<<<<<< HEAD
 #card-title {
   display: inline-block;
   font-size: 1.5em;
@@ -108,11 +146,70 @@ footer {
   
 #card-info {
   font-size: .80em;
+=======
+#card-top {
+  background-color: #696870;
+  padding: .5em;
+  margin: .5em 0;
+  border-radius: 100px;
+  border: solid 5px #2f2f30;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#card-title {
+  display: inline-block;
+  font-size: 1.6em;
+  color: #d7e9f1;
+  transition: all 2s ease-in-out;
+  margin: 0 0 0 .5em;
+  text-shadow: 0 0 2px #0a0a0a;
+}
+
+  #card-title:hover {
+    color: #646262;
+    text-shadow: 0 0 10px #ffffff;
+  }
+
+#snow-icon {
+  margin-right: .7rem;
+  float: right;
+  transition: all .5s;
+}
+
+  #snow-icon:hover {
+    transform: scale(1.5)
+  }
+
+#card-image {
+  width: 300px; 
+  height: 200px;
+  box-sizing: border-box;
+  border: solid 4px #2f2f30;
+  border-radius: 4px;
+  transition: all .7s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+  
+  #card-image:hover {
+    content: url("ghost-angry.jpg");
+    transform: scale(1.2) rotate(360deg);
+    z-index: 999;
+    border-radius: 50%;
+  }
+  
+#card-info {
+  font-size: .85em;
+>>>>>>> 2501668dcadab0be357cbbd901804fca532eff10
   padding: 0px 10px;
   margin-top: 10px;
-  border: solid 1px #bebbbb;
+  border: solid 4px #2f2f30;
   border-radius: 8px; 
   background-color: #eeeeee;
+<<<<<<< HEAD
   transition: all .5s; 
   position: relative;
   z-index: 998;
@@ -123,6 +220,23 @@ footer {
     z-index: 999;
   }
 
+=======
+  transition: all .4s ease-in-out; 
+  position: relative;
+  z-index: 998;
+  opacity: .9;
+}
+
+  #card-info:hover {
+    transform: scale(1.20);
+    z-index: 999;
+  }
+
+#info-fact {
+  text-align: center;
+}
+
+>>>>>>> 2501668dcadab0be357cbbd901804fca532eff10
 #info-list {
   list-style-type: none;
   padding: 0;
@@ -131,12 +245,17 @@ footer {
 #card-bottom {
   padding-top: .8em;
   height: 30px;
+<<<<<<< HEAD
   transition: all .5s;  
+=======
+  transition: all .4s ease-in-out;  
+>>>>>>> 2501668dcadab0be357cbbd901804fca532eff10
 }
 
   #card-bottom:hover {
     position: relative;
     transform: scale(1.5);
+<<<<<<< HEAD
     border: 1px solid #8d8c8c;
     border-radius: 5px;
     background-color: #c9c5c5;
@@ -160,3 +279,19 @@ footer {
   right: 34px
 }
   
+=======
+    border: 4px solid #2f2f30;
+    border-radius: 5px;
+    background: radial-gradient( #85858b, #d2d2dd);
+    z-index: 999;
+    padding-bottom: .5em;
+  }
+
+#health-icon {
+  padding: 0 0 0 3em;
+}
+
+#attack-icon {
+  margin: 0 0 0 6.8em;
+}
+>>>>>>> 2501668dcadab0be357cbbd901804fca532eff10

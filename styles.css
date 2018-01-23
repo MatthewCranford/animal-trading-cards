@@ -2,6 +2,7 @@
   Elements
 ================ */
 
+
 :root:before {
   content: url(https://www.dropbox.com/s/0vyqiwnt1v3zbxx/ghost-angry.jpg?raw=1);
   visibility: hidden;

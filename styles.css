@@ -1,41 +1,17 @@
-/* =============
-  Elements
-================ */
-
-
-:root:before {
-  content: url(https://www.dropbox.com/s/0vyqiwnt1v3zbxx/ghost-angry.jpg?raw=1);
-  visibility: hidden;
-  position: absolute;
-  left: -999em;
-}
-
 html,
 body {
  font-family: 'Supermercado One', cursive, Arial, Helvetica, sans-serif
 }
-
-html {
-  display: table;
-  margin: auto;
-}
-
 footer {
   text-align: center;
   margin: 1.5em 0 0;
   font-size: .9em;
   font-family: Arial, Helvetica, sans-serif
 }
-
-/* =============
-  Classes
-================ */
-
 .icon {
   width: 25px;
   height: 25px;
 }
-
 .icon-text {
   font-size: 1.25em;
   font-weight: bold;
@@ -45,143 +21,87 @@ footer {
   bottom: 7px;
   right: 32px;
 }
-
 .link {
   text-decoration: none;
-  color: #858383
+  color: #646464
 }
-
   .link:hover {
     filter: brightness(125%);
   }
-
   .link:active {
     filter: brightness(140%);
-  }
-
-/* =============
-  IDs
-================ */
-
-#card-container {
+	}
+	
+.card__container {
   margin-top: 1rem;
   width: 300px;
-  padding: 0px 10px 7px;
+  padding: 0px 10px 15px;
   border: ridge 5px #2f2f30;
   border-radius: 5px;
   box-shadow: 4px 5px 8px 2px #8d8c8c;
   background-color: #c9c5c5;
   opacity: 1;
-  animation: fadein 2s;
-  background: radial-gradient(#313133, #85858b, #d2d2dd);
+  animation: fadeIn 2s;
+	background: radial-gradient(#313133, #85858b, #d2d2dd);
+	margin: 3rem auto 0;
 }
-
-  @keyframes fadein {
+  @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
   }
+	.card__top {
+		background-color: #696870;
+		padding: .5em;
+		margin: .5em 0;
+		border-radius: 100px;
+		border: solid 5px #2f2f30;
+		display: flex;
+		justify-content: center;
+	}
+		.card__title {
+			display: inline-block;
+			font-size: 1.6em;
+			margin: 0 0 0 .5em;
+			color: #d7e1e6;
+			text-shadow: 0 0 5px #646262;
+			animation: ghost 8s infinite ease-in-out;
+		}
+			@keyframes ghost {
+				50% {color: #646262; text-shadow: 0 0 10px #ffffff;}
+			}
+	.card__image {
+		width: 300px; 
+		height: 200px;
+		box-sizing: border-box;
+		border: solid 4px #2f2f30;
+		border-radius: 4px;
+		overflow: hidden;
+	}
+	.card__info {
+		font-size: .9em;
+		padding: 0px 10px;
+		margin-top: 10px;
+		border: solid 4px #2f2f30;
+		border-radius: 8px; 
+		background-color: #eeeeee;
+		transition: transform .4s ease-in-out; 
+		position: relative;
+		z-index: 998;
+		opacity: .9;
+	}
+		.card__info:hover {
+			transform: scale(1.15);
+			z-index: 999;
+			opacity: 1;
+		}
+		.card__info-fact {
+			text-align: center;
+		}
+		.card__info-list {
+			list-style-type: none;
+			padding: 0;
+		}
+			.card__info-list>li>span {
+				font-weight: bold;
+			}
 
-#card-top {
-  background-color: #696870;
-  padding: .5em;
-  margin: .5em 0;
-  border-radius: 100px;
-  border: solid 5px #2f2f30;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#card-title {
-  display: inline-block;
-  font-size: 1.6em;
-  color: #d7e9f1;
-  transition: all 2s ease-in-out;
-  margin: 0 0 0 .5em;
-  text-shadow: 0 0 2px #0a0a0a;
-}
-
-  #card-title:hover {
-    color: #646262;
-    text-shadow: 0 0 10px #ffffff;
-  }
-
-#snow-icon {
-  margin-right: .7rem;
-  float: right;
-  transition: all .5s;
-}
-
-  #snow-icon:hover {
-    transform: scale(1.5)
-  }
-
-#card-image {
-  width: 300px; 
-  height: 200px;
-  box-sizing: border-box;
-  border: solid 4px #2f2f30;
-  border-radius: 4px;
-  transition: all .7s ease-in-out;
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
-}
-  
-  #card-image:hover {
-    content: url("ghost-angry.jpg");
-    transform: scale(1.2) rotate(360deg);
-    z-index: 999;
-    border-radius: 50%;
-  }
-  
-#card-info {
-  font-size: .85em;
-  padding: 0px 10px;
-  margin-top: 10px;
-  border: solid 4px #2f2f30;
-  border-radius: 8px; 
-  background-color: #eeeeee;
-  transition: all .4s ease-in-out; 
-  position: relative;
-  z-index: 998;
-  opacity: .9;
-}
-
-  #card-info:hover {
-    transform: scale(1.20);
-    z-index: 999;
-  }
-
-#info-fact {
-  text-align: center;
-}
-
-#info-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-#card-bottom {
-  padding-top: .8em;
-  height: 30px;
-  transition: all .4s ease-in-out;  
-}
-
-  #card-bottom:hover {
-    position: relative;
-    transform: scale(1.5);
-    border: 4px solid #2f2f30;
-    border-radius: 5px;
-    background: radial-gradient( #85858b, #d2d2dd);
-    z-index: 999;
-    padding-bottom: .5em;
-  }
-
-#health-icon {
-  padding: 0 0 0 3em;
-}
-
-#attack-icon {
-  margin: 0 0 0 6.8em;
-}

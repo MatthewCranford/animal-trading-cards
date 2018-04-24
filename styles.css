@@ -19,7 +19,7 @@ footer {
     filter: brightness(140%);
 	}
 	
-.card-container {
+.card__container {
   margin-top: 1rem;
   width: 300px;
   padding: 0px 10px 15px;
@@ -37,7 +37,7 @@ footer {
     from {opacity: 0;}
     to {opacity: 1;}
   }
-	.card-top {
+	.card__top {
 		background-color: #696870;
 		padding: .5em;
 		margin: .5em 0;
@@ -46,7 +46,7 @@ footer {
 		display: flex;
 		justify-content: center;
 	}
-		.card-title {
+		.card__title {
 			display: inline-block;
 			font-size: 1.6em;
 			margin: 0 0 0 .5em;
@@ -57,7 +57,7 @@ footer {
 			@keyframes ghost {
 				50% {color: #646262; text-shadow: 0 0 10px #ffffff;}
 			}
-	.card-image {
+	.card__image {
 		width: 300px; 
 		height: 200px;
 		box-sizing: border-box;
@@ -65,7 +65,7 @@ footer {
 		border-radius: 4px;
 		overflow: hidden;
 	}
-	.card-info {
+	.card__info {
 		font-size: .9em;
 		padding: 0px 10px;
 		margin-top: 10px;
@@ -77,22 +77,22 @@ footer {
 		z-index: 998;
 		opacity: .9;
 	}
-		.card-info:hover {
+		.card__info:hover {
 			transform: scale(1.15);
 			z-index: 999;
 			opacity: 1;
 		}
-		.card-fact {
+		.card__info-fact {
 			text-align: center;
 		}
 		.italic {
 			font-style: italic;
 		}
-		.card-list {
+		.card__info-list {
 			list-style-type: none;
 			padding: 0;
 		}
-			.card-list>li>span {
+			.card__info-list>li>span {
 				font-weight: bold;
 			}
 
